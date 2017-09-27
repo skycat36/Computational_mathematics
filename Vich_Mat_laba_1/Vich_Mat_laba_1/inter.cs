@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Vich_Mat_laba_1
 {
-    class Inter
+    public class Inter
     {
-        public TableInterp[] tableInterp;
-        private double ArgX;
+        public TableInterp[] tableInterp;  // Таблица узлов интерполяции
+        public double ArgX;
         private int n;
 
         public Inter(TableInterp[] interp)
@@ -18,7 +18,7 @@ namespace Vich_Mat_laba_1
             n = interp.Length;
         }
 
-        public void Set_ArgX(double ArX)
+        public void Set_ArgX(double ArX)   // значение в котором нужно вычислить многочлен
         {
             ArgX = ArX;
         }
@@ -51,10 +51,9 @@ namespace Vich_Mat_laba_1
             double lagr = 0;
             double sigm = SigmaArgX();
 
-
             for (int i = 0; i < this.n; i++)
             {
-                lagr += (sigm * tableInterp[i].f_x) / ((this.ArgX - tableInterp[i].x) * SigmaBarArgXi(i));
+                lagr += (sigm * tableInterp[i].f_x) / ((this.ArgX - tableInterp[i].x) * SigmaBarArgXi(i)); //Барицентрический многочлен Лагранжа
             }
 
             return lagr;

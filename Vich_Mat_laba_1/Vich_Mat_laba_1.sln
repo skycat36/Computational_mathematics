@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vich_Mat_laba_1", "Vich_Mat_laba_1\Vich_Mat_laba_1.csproj", "{584DC991-0593-4382-825C-D537BD53BB88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVich_Mat_laba_1", "TestVich_Mat_laba_1\TestVich_Mat_laba_1.csproj", "{BF0DCE5C-7B0F-42D3-BC7D-9D60FDD85314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{584DC991-0593-4382-825C-D537BD53BB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584DC991-0593-4382-825C-D537BD53BB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584DC991-0593-4382-825C-D537BD53BB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0DCE5C-7B0F-42D3-BC7D-9D60FDD85314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0DCE5C-7B0F-42D3-BC7D-9D60FDD85314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0DCE5C-7B0F-42D3-BC7D-9D60FDD85314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0DCE5C-7B0F-42D3-BC7D-9D60FDD85314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

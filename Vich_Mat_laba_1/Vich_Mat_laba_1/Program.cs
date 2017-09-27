@@ -8,12 +8,12 @@ namespace Vich_Mat_laba_1
 {
     class Program
     {
-        public static double Func(double x)
+        public static double Func(double x)  // Функция значение в точке которой надо вычислить
         {
             return Math.Sinh(x);
         }
 
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             Console.WriteLine("Введите количество узлов интерполяции: ");
             int n = Convert.ToInt32(Console.ReadLine());
@@ -26,11 +26,22 @@ namespace Vich_Mat_laba_1
                 table[i] = new TableInterp(temp, Func(temp));
                 Console.WriteLine("");
             }
+            for (int i=0; i < n - 1; i++)   // Проверка на монотонность
+            {
+                if (table[i].x > table[i+1].x)
+                {
+                    return 2;
+                } 
+            }
+                
             Inter inter = new Inter(table);
             Console.WriteLine("Введите значение в котором нужно вычислить Бариационный многочлен Лагранжа");
             inter.Set_ArgX(Convert.ToDouble(Console.ReadLine()));
             Console.WriteLine(Convert.ToString(inter.LagrangInterp()));
+            Console.WriteLine("Функция Func");
+            Console.WriteLine(Convert.ToString(Func(inter.ArgX)));
             Console.ReadKey();
+            return 0;
         }
     }
 }

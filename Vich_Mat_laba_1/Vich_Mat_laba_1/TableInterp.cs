@@ -13,7 +13,6 @@ namespace Vich_Mat_laba_1
 
         public TableInterp()
         {
-
         }
 
         public TableInterp(double in_x, double in_f_x)

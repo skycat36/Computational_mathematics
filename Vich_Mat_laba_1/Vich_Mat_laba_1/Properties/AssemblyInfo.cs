@@ -34,3 +34,6 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: InternalsVisibleTo("Vich_Mat_laba_1.Tests")]
+[assembly: InternalsVisibleTo("Vich_Mat_laba_1.Explorables")]
+
